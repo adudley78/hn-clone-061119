@@ -1,11 +1,11 @@
-import React from 'react';
-import ListItem from 'components/ListItem';
-import { ListWrapper } from './styles';
+import styled from 'styled-components';
 
-const List = () => (
-    <ListWrapper>
-        <ListItem />
-    </ListWrapper>
-);
-
-export default List;
+export const ListWrapper = styled.ul`
+    background-color: ${({ theme }) => theme.backgroundSecondary};
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    `;
